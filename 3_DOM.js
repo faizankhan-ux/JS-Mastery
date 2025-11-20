@@ -33,6 +33,7 @@ let newDiv = document.createElement("div");
 newDiv.innerText = "I am a new div";
 newDiv.classList.add("box-class");
 document.body.appendChild(newDiv); // appends to body
+document.body.prependChild(newDiv); // appends to body at starting
 newDiv.remove(); // removes the element
 
 // -- Change attribute --
@@ -51,13 +52,16 @@ box1.removeAttribute("src");
     "dblclick"
 */
 
-box1.addEventListener("click" , function(){
-    alert("Box clicked!");  
-})
+function clickHua(){
+    alert("click kyu kiya")
+}
+
+box1.addEventListener("click" , clickHua)
 
 // -- Read input value --
 let inputBox = document.getElementById("input-box");
-inputBox.addEventListener("input", function(){
+
+inputBox.addEventListener("Onchange", () => {
     console.log(inputBox.value);
 })
 inputBox.value = "New Value"; // change input value

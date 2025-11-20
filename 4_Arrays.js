@@ -30,7 +30,7 @@ let arr = [1, 'two', true, null, { key: 'value' }, [5, 6]];
 //creates a new array by applying a function to each element of the original array
 let numbers = [1, 2, 3, 4, 5];
 let squared = numbers.map((elem , idx) => {
-    return elem*elem;
+    return elem*elem; 
 })
 
 

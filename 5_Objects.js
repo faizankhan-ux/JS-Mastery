@@ -4,6 +4,7 @@ let obj = {
   name: "Faizan",
   "full name": "Mohammed Faizan Khan",
   age: 18,
+  "my height" : 180,
   country: "Dubai",
   skills: {
     programming: ["C++", "Python", "Java"],
