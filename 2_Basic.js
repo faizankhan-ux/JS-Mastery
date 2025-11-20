@@ -1,7 +1,8 @@
 // -- Variabels --
 let a = 10 // reassign is allowed , block scoped
 const b = 20 // reassig is not allowed , block scoped , initialized quickly
-var c = 30 // reassign is allowed , function scoped , old version 
+var c = 30 // reassign is allowed , function scoped , old version
+
 
 /* Hoisting : JS moves all declarations to the top.
  var is hoisted and initialized with undefined
@@ -63,6 +64,8 @@ function sum(...numbers) {
     });
 }
 
+sum(1,2,3,4,5)
+
 // -- loops --
 
 // for of loop
@@ -71,8 +74,13 @@ for(let item of arr2) {
     console.log(item); // o/p: 10 20 30 40 50
 }
 
+//for -each
+arr2.forEach((a, b) => {
+    console.log(a + ":" + b)
+})
+
 // for in loop
 let obj2 = { x: 1, y: 2, z: 3 };
 for(let key in obj2){
-    console.log(key + ": " + onj2[key]); // o/p: x: 1 y: 2 z: 3
+    console.log(key + ": " + obj2[key]); // o/p: x: 1 y: 2 z: 3
 }
